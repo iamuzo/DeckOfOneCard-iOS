@@ -15,32 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1n-Cx-Qic">
-                                <rect key="frame" x="171" y="752" width="72" height="30"/>
-                                <state key="normal" title="Draw Card"/>
-                                <connections>
-                                    <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Znz-jN-MJt"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU7-cK-0DF">
+                                <rect key="frame" x="186" y="124" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aep-cd-bgf">
                                 <rect key="frame" x="87" y="174" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aep-cd-bgf" secondAttribute="height" multiplier="1:1" id="Sw0-Lg-wxq"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1n-Cx-Qic">
+                                <rect key="frame" x="171" y="544" width="72" height="30"/>
+                                <state key="normal" title="Draw Card"/>
+                                <connections>
+                                    <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Znz-jN-MJt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="aep-cd-bgf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CpZ-bT-Ziw"/>
-                            <constraint firstItem="B1n-Cx-Qic" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="G4o-1f-GfY"/>
-                            <constraint firstItem="B1n-Cx-Qic" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="708" id="Zlo-2Q-vkw"/>
-                            <constraint firstItem="aep-cd-bgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="dll-ue-Jyl"/>
-                            <constraint firstItem="aep-cd-bgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="nUl-nl-9La"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B1n-Cx-Qic" secondAttribute="bottom" constant="80" id="tML-wx-hVn"/>
+                            <constraint firstItem="aep-cd-bgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1hc-hj-80K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B1n-Cx-Qic" secondAttribute="bottom" constant="288" id="9n2-xm-wiO"/>
+                            <constraint firstItem="jU7-cK-0DF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KYe-JK-j8b"/>
+                            <constraint firstItem="jU7-cK-0DF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="LNc-Z7-fJB"/>
+                            <constraint firstItem="B1n-Cx-Qic" firstAttribute="top" secondItem="aep-cd-bgf" secondAttribute="bottom" constant="130" id="Oeg-9i-emA"/>
+                            <constraint firstItem="aep-cd-bgf" firstAttribute="top" secondItem="jU7-cK-0DF" secondAttribute="bottom" constant="29" id="YB1-1X-2KL"/>
+                            <constraint firstItem="B1n-Cx-Qic" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="gbK-DS-Hvd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B1n-Cx-Qic" secondAttribute="trailing" constant="171" id="j6p-G9-Jb3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aep-cd-bgf" secondAttribute="trailing" constant="87" id="qVM-pF-h5h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SuitAndValueLabel" destination="jU7-cK-0DF" id="P5Y-jj-O9Q"/>
                         <outlet property="cardImageView" destination="aep-cd-bgf" id="a2f-rw-vZt"/>
                     </connections>
                 </viewController>
