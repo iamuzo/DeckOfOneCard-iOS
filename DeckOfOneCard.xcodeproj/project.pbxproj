@@ -17,6 +17,7 @@
 		0F53E0BF23D3FC8E004BA464 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53E0BE23D3FC8E004BA464 /* Card.swift */; };
 		0F53E0C323D3FE35004BA464 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53E0C223D3FE35004BA464 /* CardViewController.swift */; };
 		0FD0236D23D7D0BA0058A8A2 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0236C23D7D0BA0058A8A2 /* CardError.swift */; };
+		0FD0237123D7D7320058A8A2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0237023D7D7320058A8A2 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0F53E0BE23D3FC8E004BA464 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0F53E0C223D3FE35004BA464 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		0FD0236C23D7D0BA0058A8A2 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		0FD0237023D7D7320058A8A2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0FD0236C23D7D0BA0058A8A2 /* CardError.swift */,
+				0FD0237023D7D7320058A8A2 /* UIViewControllerExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				0F53E0C323D3FE35004BA464 /* CardViewController.swift in Sources */,
 				0F53E0BA23D3FBF1004BA464 /* CardController.swift in Sources */,
 				0F53E0BF23D3FC8E004BA464 /* Card.swift in Sources */,
+				0FD0237123D7D7320058A8A2 /* UIViewControllerExtension.swift in Sources */,
 				0F53E0A323D3F5BD004BA464 /* AppDelegate.swift in Sources */,
 				0FD0236D23D7D0BA0058A8A2 /* CardError.swift in Sources */,
 				0F53E0A523D3F5BD004BA464 /* SceneDelegate.swift in Sources */,
