@@ -12,6 +12,7 @@ class CardViewController: UIViewController {
     
     // MARK:- Outlets
     @IBOutlet weak var cardImageView: UIImageView!
+    @IBOutlet weak var SuitAndValueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,6 @@ class CardViewController: UIViewController {
         // when you add the cardNameLabel do the below
         // this is actually done by the background thread
         // therefore we ned to send this result back to the mainthread
-        // cardNameLabel.text = card.suit + " " + card.value
         
         // we once again do a background process by sending
         // a https request to get the image
@@ -54,6 +54,7 @@ class CardViewController: UIViewController {
                     case .success(let image):
                         // update the label
                         //update the imageView
+                        self.SuitAndValueLabel.text = card.suit + " " + card.value
                         self.cardImageView.image = image
                     
                     case .failure(let error):
