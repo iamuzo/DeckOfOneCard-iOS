@@ -40,7 +40,7 @@ class CardController {
             // 3 - handle error
             if let error = error {
                 print(error, error.localizedDescription)
-                return completion(.failure(.communicationError))
+                return completion(.failure(.thrownError(error)))
             }
             
             // 4 - unwrap and decode our data
@@ -77,7 +77,7 @@ class CardController {
             // step 3: - handle errors
             if let error = error {
                 print(error, error.localizedDescription)
-                return completion(.failure(.communicationError))
+                return completion(.failure(.thrownError(error)))
             }
             
             // step 4: - unwrap the data
@@ -95,15 +95,4 @@ class CardController {
             
         }.resume()
     }
-}
-
-// houses all the potential errors that
-// might occur when we try to fetch a
-// card or cardImage from the internet
-enum CardError: LocalizedError {
-    case invalidURL
-    case communicationError
-    case noData
-    case unableToDecodeData
-    case noCards
 }
